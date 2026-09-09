@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-09 15:38:07",
+  "timezone": "America/Santiago",
+  "stations": [
+    {
+      "code": "AGUA-01",
+      "name": "Carén",
+      "context": "Línea Base Pública – Carén",
+      "project": "Proyecto 13 – LBP AGUA",
+      "project_id": 13,
+      "device_id": 94,
+      "lat": -33.434876,
+      "lng": -70.845282,
+      "variables": [
+        "conductividad_us_cm",
+        "ph",
+        "senal_csq",
+        "temperatura_agua_c",
+        "temperatura_sistema_c",
+        "voltaje_v"
+      ],
+      "months": {
+        "2025-10": [
+          "data/AGUA-01/2025-10-part-001.csv"
+        ],
+        "2025-11": [
+          "data/AGUA-01/2025-11-part-001.csv"
+        ],
+        "2025-12": [
+          "data/AGUA-01/2025-12-part-001.csv"
+        ],
+        "2026-01": [
+          "data/AGUA-01/2026-01-part-001.csv"
+        ],
+        "2026-02": [
+          "data/AGUA-01/2026-02-part-001.csv"
+        ],
+        "2026-03": [
+          "data/AGUA-01/2026-03-part-001.csv"
+        ],
+        "2026-04": [
+          "data/AGUA-01/2026-04-part-001.csv"
+        ],
+        "2026-05": [
+          "data/AGUA-01/2026-05-part-001.csv"
+        ],
+        "2026-06": [
+          "data/AGUA-01/2026-06-part-001.csv"
+        ],
+        "2026-07": [
+          "data/AGUA-01/2026-07-part-001.csv"
+        ],
+        "2026-08": [
+          "data/AGUA-01/2026-08-part-001.csv"
+        ],
+        "2026-09": [
+          "data/AGUA-01/2026-09-part-001.csv"
+        ]
+      }
+    },
+    {
+      "code": "AGUA-02",
+      "name": "Trapiche",
+      "context": "Línea Base Pública – Trapiche",
+      "project": "Proyecto 13 – LBP AGUA",
+      "project_id": 13,
+      "device_id": 113,
+      "lat": -33.597222,
+      "lng": -70.893611,
+      "variables": [
+        "conductividad_us_cm",
+        "ph",
+        "senal_csq",
+        "temperatura_agua_c",
+        "temperatura_sistema_c",
+        "voltaje_v"
+      ],
+      "months": {
+        "2025-09": [
+          "data/AGUA-02/2025-09-part-001.csv"
+        ],
+        "2025-10": [
+          "data/AGUA-02/2025-10-part-001.csv"
+        ],
+        "2025-11": [
+          "data/AGUA-02/2025-11-part-001.csv"
+        ],
+        "2025-12": [
+          "data/AGUA-02/2025-12-part-001.csv"
+        ],
+        "2026-01": [
+          "data/AGUA-02/2026-01-part-001.csv"
+        ],
+        "2026-02": [
+          "data/AGUA-02/2026-02-part-001.csv"
+        ],
+        "2026-03": [
+          "data/AGUA-02/2026-03-part-001.csv"
+        ],
+        "2026-04": [
+          "data/AGUA-02/2026-04-part-001.csv"
+        ],
+        "2026-05": [
+          "data/AGUA-02/2026-05-part-001.csv"
+        ],
+        "2026-06": [
+          "data/AGUA-02/2026-06-part-001.csv"
+        ],
+        "2026-07": [
+          "data/AGUA-02/2026-07-part-001.csv"
+        ],
+        "2026-08": [
+          "data/AGUA-02/2026-08-part-001.csv"
+        ],
+        "2026-09": [
+          "data/AGUA-02/2026-09-part-001.csv"
+        ]
+      }
+    },
+    {
+      "code": "AGUA-03",
+      "name": "Mantagua · LBP",
+      "context": "Mantagua",
+      "project": "Proyecto 13 – LBP AGUA",
+      "project_id": 13,
+      "device_id": 216,
+      "lat": -32.882167,
+      "lng": -71.497028,
+      "variables": [
+        "conductividad_us_cm",
+        "oxigeno_disuelto_mg_l",
+        "ph",
+        "senal_csq",
+        "temperatura_agua_c",
+        "temperatura_sistema_c",
+        "voltaje_v"
+      ],
+      "months": {
+        "2026-02": [
+          "data/AGUA-03/2026-02-part-001.csv"
+        ],
+        "2026-03": [
+          "data/AGUA-03/2026-03-part-001.csv"
+        ],
+        "2026-04": [
+          "data/AGUA-03/2026-04-part-001.csv"
+        ],
+        "2026-05": [
+          "data/AGUA-03/2026-05-part-001.csv"
+        ],
+        "2026-09": [
+          "data/AGUA-03/2026-09-part-001.csv"
+        ]
+      }
+    },
+    {
+      "code": "URA-01",
+      "name": "Mantagua · URA",
+      "context": "Mantagua",
+      "project": "Proyecto 22 – URA",
+      "project_id": 22,
+      "device_id": 256,
+      "lat": -32.882168,
+      "lng": -71.497029,
+      "variables": [
+        "conductividad_us_cm",
+        "ph",
+        "senal_csq",
+        "temperatura_agua_c",
+        "temperatura_sistema_c",
+        "voltaje_v"
+      ],
+      "months": {
+        "2026-09": [
+          "data/URA-01/2026-09-part-001.csv"
+        ]
+      }
+    }
+  ],
+  "variables": {
+    "ph": {
+      "label": "pH",
+      "unit": "pH"
+    },
+    "conductividad_us_cm": {
+      "label": "Conductividad eléctrica",
+      "unit": "µS/cm"
+    },
+    "temperatura_agua_c": {
+      "label": "Temperatura del agua",
+      "unit": "°C"
+    },
+    "oxigeno_disuelto_mg_l": {
+      "label": "Oxígeno disuelto",
+      "unit": "mg/L",
+      "note": "Sensor en validación"
+    },
+    "temperatura_sistema_c": {
+      "label": "Temperatura del sistema",
+      "unit": "°C",
+      "diagnostic": true
+    },
+    "voltaje_v": {
+      "label": "Voltaje",
+      "unit": "V",
+      "diagnostic": true
+    },
+    "senal_csq": {
+      "label": "Señal celular",
+      "unit": "CSQ",
+      "diagnostic": true
+    }
+  }
+}

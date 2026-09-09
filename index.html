@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Monitoreo público de calidad de agua del Centro C+ UDD">
+  <title>Monitoreo de Calidad de Agua C+</title>
+  <link rel="preconnect" href="https://unpkg.com"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <style>[hidden]{display:none!important}</style>
+</head>
+<body>
+  <header><a href="https://cmas.udd.cl/" target="_blank" rel="noopener"><img src="documentacion/logo-cmas-header.svg" alt="Centro C+ Universidad del Desarrollo"></a><span class="license">Licenciamiento propuesto · en revisión</span></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">OBSERVACIÓN AMBIENTAL ABIERTA</p><h1>Monitoreo de<br><em>Calidad de Agua C+</em></h1><p>Explora las mediciones de nuestras estaciones, compara tendencias y descarga los datos abiertos.</p></div><div class="wave" aria-hidden="true">≈</div></section>
+    <section class="statusbar"><div><span id="live-dot"></span><strong id="live-label">Cargando datos…</strong></div><div>Última medición <strong id="updated">—</strong></div><div>Revisión en vivo cada 10 minutos</div></section>
+    <section class="grid intro"><article><span class="kicker">RED DE MONITOREO</span><h2>Cuatro estaciones, una mirada común</h2><p>Selecciona un punto del mapa para revisar pH, conductividad, temperatura y variables operativas.</p><div id="station-list" class="station-list"></div></article><div id="map" aria-label="Mapa de estaciones"></div></section>
+    <section class="panel">
+      <div class="panel-head"><div><span class="kicker">DATOS DE LA ESTACIÓN</span><h2 id="station-title">—</h2><p id="station-context">—</p></div><div class="controls"><label>Estación<select id="station-select"></select></label><label>Variable<select id="variable-select"></select></label><label>Período<select id="period-select"><option value="24h">24 horas</option><option value="7d">7 días</option><option value="30d" selected>30 días</option><option value="all">Todo</option></select></label></div></div>
+      <div class="metric-row"><article class="metric"><span>Último valor</span><strong id="last-value">—</strong><small id="last-time">—</small></article><article class="metric norm"><span>Referencia chilena</span><strong id="norm-state">—</strong><small id="norm-detail">—</small></article><article class="metric"><span>Disponibilidad</span><strong id="availability">—</strong><small id="record-count">—</small></article></div>
+      <div class="chart-wrap"><canvas id="chart"></canvas><div id="chart-empty" hidden>Sin datos válidos para esta selección.</div></div>
+      <div class="actions"><button id="download-selection">Descargar selección CSV</button><button id="download-all" class="secondary">Descargar todos los datos</button></div>
+    </section>
+    <section class="method"><div><span class="kicker">CÓMO INTERPRETAR</span><h2>Datos con contexto</h2></div><div><p>Las categorías de pH y conductividad usan como referencia la NCh 1333 para agua de riego. No equivalen a una certificación de agua potable ni a una evaluación regulatoria oficial.</p><p>Cuando no existe una referencia aplicable, mostramos el valor observado sin clasificarlo. Los datos pueden contener interrupciones, incertidumbre o correcciones.</p></div></section>
+  </main>
+  <footer><img src="documentacion/Ingenieria.png" alt="Facultad de Ingeniería UDD"><p>Centro C+ · Universidad del Desarrollo</p><p>Datos y licenciamiento propuestos en revisión. <a href="LICENCIAMIENTO_PROPUESTO.md">Ver detalles</a></p></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script><script src="app.js"></script>
+</body></html>

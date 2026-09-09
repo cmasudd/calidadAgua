@@ -1,0 +1,6 @@
+[
+  {"code":"AGUA-01","name":"Carén","context":"Línea Base Pública – Carén","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":94,"lat":-33.434876,"lng":-70.845282},
+  {"code":"AGUA-02","name":"Trapiche","context":"Línea Base Pública – Trapiche","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":113,"lat":-33.597222,"lng":-70.893611},
+  {"code":"AGUA-03","name":"Mantagua · LBP","context":"Mantagua","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":216,"lat":-32.882167,"lng":-71.497028},
+  {"code":"URA-01","name":"Mantagua · URA","context":"Mantagua","project":"Proyecto 22 – URA","project_id":22,"device_id":256,"lat":-32.882168,"lng":-71.497029}
+]

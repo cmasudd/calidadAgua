@@ -1,0 +1,4 @@
+fecha,ph,conductividad_us_cm,temperatura_agua_c,oxigeno_disuelto_mg_l,temperatura_sistema_c,voltaje_v,senal_csq
+2025-09-04 18:41:09,7.03,1453,17.56,,27.75,11.85,18
+2025-09-04 18:42:27,7.02,1453,17.56,,28.25,11.88,19
+2025-09-04 18:51:41,7.1,1453,17.56,,28.25,11.66,19
