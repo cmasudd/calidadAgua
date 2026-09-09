@@ -29,10 +29,16 @@ licencias propuestas.
 - El navegador revisa la API en vivo cada diez minutos.
 - El publicador local reconstruye el mes vigente y publica cambios una vez por
   hora.
+- La descarga total entrega un ZIP con un CSV separado y nombrado por estación
+  (`AGUA-01.csv`, `AGUA-02.csv`, `AGUA-03.csv` y `URA-01.csv`).
 
 Los gráficos de pH y conductividad muestran una referencia orientativa de la
 NCh 1333 para agua de riego. No representan una certificación sanitaria ni una
 evaluación oficial de cumplimiento ambiental.
+
+Los períodos de 24 horas y 7 días muestran las mediciones individuales. En 30
+días y en todo el histórico, la línea corresponde al promedio diario y la banda
+representa el mínimo y máximo de cada día.
 
 ## Exportación manual
 
