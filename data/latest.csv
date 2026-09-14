@@ -1,9 +1,9 @@
 codigo,fecha,variable,valor
-AGUA-01,2026-09-13 23:18:28,conductividad_us_cm,1053
-AGUA-01,2026-09-13 23:18:28,temperatura_agua_c,15.5
-AGUA-01,2026-09-13 23:18:28,voltaje_v,12.35
-AGUA-01,2026-09-13 23:18:28,senal_csq,28
-AGUA-01,2026-09-13 23:18:28,temperatura_sistema_c,17.75
+AGUA-01,2026-09-14 00:24:25,conductividad_us_cm,1047
+AGUA-01,2026-09-14 00:24:25,temperatura_agua_c,15.38
+AGUA-01,2026-09-14 00:24:25,voltaje_v,12.33
+AGUA-01,2026-09-14 00:24:25,senal_csq,28
+AGUA-01,2026-09-14 00:24:25,temperatura_sistema_c,16.25
 AGUA-02,2026-09-13 23:22:32,ph,9.3
 AGUA-02,2026-09-13 23:22:32,conductividad_us_cm,906.9
 AGUA-02,2026-09-13 23:22:32,temperatura_agua_c,16.56
@@ -16,9 +16,9 @@ AGUA-03,2026-09-13 21:01:22,voltaje_v,12.26
 AGUA-03,2026-09-13 21:01:22,senal_csq,13
 AGUA-03,2026-09-13 21:01:22,temperatura_sistema_c,16
 AGUA-03,2026-09-13 21:01:22,oxigeno_disuelto_mg_l,0
-URA-01,2026-09-13 23:19:12,voltaje_v,10.71
-URA-01,2026-09-13 23:19:12,senal_csq,19
-URA-01,2026-09-13 23:19:12,temperatura_sistema_c,17
-URA-01,2026-09-13 23:19:12,ph,6.9
-URA-01,2026-09-13 23:19:12,temperatura_agua_c,13.3
-URA-01,2026-09-13 23:19:12,conductividad_us_cm,101
+URA-01,2026-09-14 00:19:36,voltaje_v,10.7
+URA-01,2026-09-14 00:19:36,senal_csq,19
+URA-01,2026-09-14 00:19:36,temperatura_sistema_c,16.75
+URA-01,2026-09-14 00:19:36,ph,6.9
+URA-01,2026-09-14 00:19:36,temperatura_agua_c,12.8
+URA-01,2026-09-14 00:19:36,conductividad_us_cm,105
