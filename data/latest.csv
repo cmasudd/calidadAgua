@@ -17,8 +17,9 @@ AGUA-03,2026-09-15 17:05:02,voltaje_v,12.32
 AGUA-03,2026-09-15 17:05:02,senal_csq,11
 AGUA-03,2026-09-15 17:05:02,temperatura_sistema_c,34.25
 AGUA-03,2026-09-15 17:05:02,oxigeno_disuelto_mg_l,0
-URA-01,2026-09-15 17:46:49,voltaje_v,10.18
-URA-01,2026-09-15 17:46:49,senal_csq,22
-URA-01,2026-09-15 17:46:49,temperatura_sistema_c,31
-URA-01,2026-09-15 17:46:49,ph,6.9
-URA-01,2026-09-15 17:46:49,temperatura_agua_c,21.6
+URA-01,2026-09-15 18:46:44,voltaje_v,10.24
+URA-01,2026-09-15 18:46:44,senal_csq,20
+URA-01,2026-09-15 18:46:44,temperatura_sistema_c,22.5
+URA-01,2026-09-15 18:46:44,ph,6.9
+URA-01,2026-09-15 18:46:44,temperatura_agua_c,17.1
+URA-01,2026-09-15 18:46:44,conductividad_us_cm,28
