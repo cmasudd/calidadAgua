@@ -8,6 +8,26 @@ especialmente en
 [`05_OPERACION_Y_RECUPERACION.md`](https://github.com/cmasudd/buenas_practicas/blob/main/docs/GUIA_SITIO_GITHUB_SENSORES/05_OPERACION_Y_RECUPERACION.md)
 y el [registro de esta plataforma](https://github.com/cmasudd/buenas_practicas/blob/main/cambios/2026-09-09-calidad-agua-plataforma.md).
 
+## Estado verificado el 25 de septiembre de 2026
+
+- [x] ~~Incorporar AGUA-01, AGUA-02, AGUA-03, URA-01 y LVAG-02 a LVAG-05
+  al contrato de publicación.~~
+- [x] ~~Ejecutar y publicar el backfill histórico inicial de las cuatro
+  estaciones LVAG.~~
+- [x] ~~Validar el exportador y el contrato publicado: tres pruebas aprobadas.~~
+- [x] ~~Aplicar la versión nueva al clon exclusivo y comprobar una ejecución
+  con el resultado `Exportación lista: 8 estaciones`.~~
+- [x] ~~Comprobar que existe una sola tarea horaria, protegida con `flock`, y
+  que el servicio `cron` está activo.~~
+- [x] ~~Verificar el despliegue de GitHub Pages, las ocho estaciones en el
+  manifiesto público y la igualdad de un CSV LVAG público con su copia local.~~
+- [x] ~~Respaldar en Git la entrada segura de cron, sin credenciales, en
+  `config/calidadAgua.cron`.~~
+
+La revisión del log, la antigüedad de las mediciones, el tamaño de los CSV y el
+estado de GitHub Pages sigue siendo una tarea operativa periódica; no se
+considera cerrada de forma permanente por esta verificación.
+
 ## Circuito instalado
 
 1. MariaDB almacena las mediciones. `config/stations.json` define los
