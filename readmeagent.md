@@ -19,7 +19,8 @@ y el [registro de esta plataforma](https://github.com/cmasudd/buenas_practicas/b
    y lo envía a `cmasudd/calidadAgua`.
 3. Cron lo invoca al minuto 27 de cada hora con el lock
    `/tmp/calidadAgua-update.lock`. El log local `data-update.log` está ignorado
-   por Git. GitHub Pages sirve los CSV y la web desde `main`.
+   por Git. Una copia segura de la entrada instalada se conserva en
+   `config/calidadAgua.cron`. GitHub Pages sirve los CSV y la web desde `main`.
 4. El navegador consulta la API para una lectura reciente por estación cada
    diez minutos. El histórico y las descargas provienen de los CSV publicados.
 
@@ -100,6 +101,15 @@ que un CSV LVAG público coincide con el local y que GitHub Pages terminó el
 build del commit esperado. Una estación sin lecturas recientes no implica por
 sí sola que el daemon falló: distinguir fecha de ejecución exitosa y fecha de
 última medición.
+
+## Respaldo y restauración del cron
+
+`config/calidadAgua.cron` contiene solamente el fragmento de esta plataforma,
+sin credenciales. Para restaurarlo, revisar primero `crontab -l` y agregar la
+entrada al crontab existente. No ejecutar `crontab config/calidadAgua.cron`,
+porque eso reemplazaría todas las demás tareas del usuario. Después comprobar
+que exista una sola entrada para `calidadAgua-update.lock` y que el servicio
+`cron` esté activo.
 
 ## Fallos y límites
 

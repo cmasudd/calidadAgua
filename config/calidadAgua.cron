@@ -1,0 +1,4 @@
+# CALIDAD DE AGUA C+ - PUBLICACION HORARIA
+# Fragmento de respaldo: agregar esta entrada al crontab existente; no instalar
+# este archivo directamente con `crontab`, porque reemplazaria otras tareas.
+27 * * * * /usr/bin/flock -n /tmp/calidadAgua-update.lock /home/cmas/Documentos/calidadAgua-publisher/scripts/update_data.sh >> /home/cmas/Documentos/calidadAgua-publisher/data-update.log 2>&1
