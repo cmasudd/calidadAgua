@@ -1,7 +1,7 @@
-# Monitoreo de Calidad de Agua C+
+# Monitoreo de calidad y nivel de agua C+
 
 Sitio público del Centro C+ de la Universidad del Desarrollo para consultar,
-visualizar y descargar mediciones de calidad de agua.
+visualizar y descargar mediciones de calidad y nivel de agua.
 
 El proyecto se encuentra en preparación. La documentación inicial de
 dispositivos, variables, ubicaciones e identidad visual está en
@@ -22,19 +22,20 @@ licencias propuestas.
 
 ## Datos y funcionamiento
 
-- Cuatro estaciones: AGUA-01, AGUA-02, AGUA-03 y URA-01.
+- Ocho estaciones: AGUA-01, AGUA-02, AGUA-03, URA-01 y LVAG-02 a LVAG-05.
+- Cinco lugares en el mapa: Batuco, Carén, Trapiche, Acúleo y Mantagua. Las
+  estaciones del mismo lugar comparten marcador y fotografía.
 - Histórico público en CSV mensuales desde 2025.
 - `data/manifest.json` describe estaciones, variables y archivos disponibles.
 - `data/latest.csv` conserva la última lectura publicada por estación.
 - El navegador revisa la API en vivo cada diez minutos.
 - El publicador local reconstruye el mes vigente y publica cambios una vez por
   hora.
-- La descarga total entrega un ZIP con un CSV separado y nombrado por estación
-  (`AGUA-01.csv`, `AGUA-02.csv`, `AGUA-03.csv` y `URA-01.csv`).
+- La descarga total entrega un ZIP con un CSV separado y nombrado por estación.
 
-Los gráficos de pH y conductividad muestran una referencia orientativa de la
-NCh 1333 para agua de riego. No representan una certificación sanitaria ni una
-evaluación oficial de cumplimiento ambiental.
+Las variables de nivel incluyen distancia al agua, profundidad, temperatura y
+humedad del aire. Los valores son mediciones preliminares de cada sensor; no
+representan por sí solos una cota de nivel comparable entre lugares.
 
 Los períodos de 24 horas y 7 días muestran las mediciones individuales. En 30
 días y en todo el histórico, la línea corresponde al promedio diario y la banda

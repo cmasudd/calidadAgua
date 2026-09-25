@@ -1,6 +1,10 @@
 [
-  {"code":"AGUA-01","name":"Carén","context":"Línea Base Pública – Carén","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":94,"lat":-33.434876,"lng":-70.845282},
-  {"code":"AGUA-02","name":"Trapiche","context":"Línea Base Pública – Trapiche","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":113,"lat":-33.597222,"lng":-70.893611},
-  {"code":"AGUA-03","name":"Mantagua · LBP","context":"Mantagua","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":216,"lat":-32.882167,"lng":-71.497028},
-  {"code":"URA-01","name":"Mantagua · URA","context":"Mantagua","project":"Proyecto 22 – URA","project_id":22,"device_id":256,"lat":-32.882168,"lng":-71.497029}
+  {"code":"AGUA-01","name":"Carén · calidad","site":"caren","context":"Línea Base Pública – Carén","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":94,"lat":-33.434876,"lng":-70.845282},
+  {"code":"AGUA-02","name":"Trapiche · calidad","site":"trapiche","context":"Línea Base Pública – Trapiche","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":113,"lat":-33.597222,"lng":-70.893611},
+  {"code":"AGUA-03","name":"Mantagua","site":"mantagua","context":"Mantagua","project":"Proyecto 13 – LBP AGUA","project_id":13,"device_id":216,"lat":-32.882167,"lng":-71.497028},
+  {"code":"URA-01","name":"Mantagua · URA","site":"mantagua","context":"Mantagua","project":"Proyecto 22 – URA","project_id":22,"device_id":256,"lat":-32.882167,"lng":-71.497028},
+  {"code":"LVAG-02","name":"Batuco · nivel","site":"batuco","context":"Línea Base Pública – Batuco","project":"Proyecto 14 – LBP LVAG","project_id":14,"device_id":86,"lat":-33.19898666817914,"lng":-70.8328870177923},
+  {"code":"LVAG-03","name":"Carén · nivel","site":"caren","context":"Línea Base Pública – Carén","project":"Proyecto 14 – LBP LVAG","project_id":14,"device_id":87,"lat":-33.434876,"lng":-70.845282},
+  {"code":"LVAG-04","name":"Trapiche · nivel","site":"trapiche","context":"Línea Base Pública – Trapiche","project":"Proyecto 14 – LBP LVAG","project_id":14,"device_id":88,"lat":-33.597222,"lng":-70.893611},
+  {"code":"LVAG-05","name":"Acúleo · nivel","site":"aculeo","context":"Línea Base Pública – Acúleo","project":"Proyecto 14 – LBP LVAG","project_id":14,"device_id":89,"lat":-33.851264578348896,"lng":-70.94016155948488}
 ]

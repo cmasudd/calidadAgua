@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exporta mediciones de agua desde MariaDB a CSV estáticos para GitHub Pages."""
+"""Exporta mediciones de calidad y nivel de agua a CSV para GitHub Pages."""
 from __future__ import annotations
 
 import argparse, csv, json, os
@@ -11,7 +11,7 @@ import mysql.connector
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_START = date(2025, 1, 1)
-HEADER = ["fecha","ph","conductividad_us_cm","temperatura_agua_c","oxigeno_disuelto_mg_l","temperatura_sistema_c","voltaje_v","senal_csq"]
+HEADER = ["fecha","ph","conductividad_us_cm","temperatura_agua_c","oxigeno_disuelto_mg_l","distancia_agua_m","profundidad_m","temperatura_aire_c","humedad_aire_pct","temperatura_sistema_c","voltaje_v","senal_csq"]
 MODELS = {
     "ENV-20-pH": {1:"ph"}, "ENV-20-EC-K1.0": {2:"conductividad_us_cm"},
     "DS18B20": {3:"temperatura_agua_c"}, "ENV-40-DOX": {52:"oxigeno_disuelto_mg_l"},
@@ -19,12 +19,18 @@ MODELS = {
     "SIM7600G": {15:"senal_csq"},
     "CWT-BL-PH(T)-S": {1:"ph",3:"temperatura_agua_c"},
     "CWT-BL-EC-15K-S": {2:"conductividad_us_cm"},
+    "A01NYUB": {22:"distancia_agua_m"}, "LIQ-136": {23:"profundidad_m"},
+    "SHT40": {3:"temperatura_aire_c",6:"humedad_aire_pct"},
 }
 PUBLIC_VARS = {
     "ph":{"label":"pH","unit":"pH"},
     "conductividad_us_cm":{"label":"Conductividad eléctrica","unit":"µS/cm"},
     "temperatura_agua_c":{"label":"Temperatura del agua","unit":"°C"},
     "oxigeno_disuelto_mg_l":{"label":"Oxígeno disuelto","unit":"mg/L","note":"Sensor en validación"},
+    "distancia_agua_m":{"label":"Distancia al agua","unit":"m"},
+    "profundidad_m":{"label":"Profundidad","unit":"m"},
+    "temperatura_aire_c":{"label":"Temperatura del aire","unit":"°C"},
+    "humedad_aire_pct":{"label":"Humedad del aire","unit":"%"},
     "temperatura_sistema_c":{"label":"Temperatura del sistema","unit":"°C","diagnostic":True},
     "voltaje_v":{"label":"Voltaje","unit":"V","diagnostic":True},
     "senal_csq":{"label":"Señal celular","unit":"CSQ","diagnostic":True},
@@ -54,6 +60,7 @@ def bounds(month):
 
 def clean(model, field, value):
     value=float(value)
+    if not -float("inf") < value < float("inf"): return None
     if field=="ph" and not 0 < value < 14: return None
     if field=="conductividad_us_cm" and value <= 0: return None
     if model=="DS18B20" and not 0 < value <= 60: return None
@@ -62,6 +69,9 @@ def clean(model, field, value):
     if field=="voltaje_v" and not 0 < value < 30: return None
     if field=="senal_csq" and not 0 <= value <= 31: return None
     if field=="oxigeno_disuelto_mg_l" and not 0 <= value <= 30: return None
+    if field in ("distancia_agua_m","profundidad_m") and not 0 <= value <= 100: return None
+    if field=="temperatura_aire_c" and not -30 < value <= 60: return None
+    if field=="humedad_aire_pct" and not 0 <= value <= 100: return None
     return f"{value:.3f}".rstrip("0").rstrip(".")
 
 def sources(conn, device_id):
@@ -91,7 +101,7 @@ def export_month(conn, station, src, month, outdir):
         return rows,None
     tmp=target.with_suffix(".tmp")
     with tmp.open("w",newline="",encoding="utf-8") as f:
-        w=csv.DictWriter(f,fieldnames=HEADER); w.writeheader()
+        w=csv.DictWriter(f,fieldnames=HEADER,lineterminator="\n"); w.writeheader()
         for when,values in sorted(rows.items()): w.writerow({"fecha":when.isoformat(sep=" "),**values})
         f.flush(); os.fsync(f.fileno())
     tmp.replace(target)
@@ -104,23 +114,24 @@ def main():
         for station in stations:
             src=sources(conn,station["device_id"]); first=first_date(conn,src)
             selected=list(months(first,today)) if args.all and first else [today.strftime("%Y-%m")]
-            month_map={}; newest=None
+            month_map={}; newest={}
             for month in selected:
                 rows,path=export_month(conn,station,src,month,args.output)
                 if path: month_map[month]=[path.relative_to(ROOT).as_posix()]
                 for when,values in rows.items():
-                    if newest is None or when>newest[0]: newest=(when,values)
+                    for variable,value in values.items():
+                        if variable not in newest or when>newest[variable][0]: newest[variable]=(when,value)
             existing=sorted((args.output/station["code"]).glob("*-part-*.csv"))
             for path in existing: month_map.setdefault(path.name[:7],[]).append(path.relative_to(ROOT).as_posix())
             month_map={k:sorted(set(v)) for k,v in sorted(month_map.items())}
             variables=sorted({field for s in src for field in MODELS[s["modelo"]].values()})
             manifest.append({**station,"variables":variables,"months":month_map})
-            if newest:
-                for variable,value in newest[1].items(): latest.append({"codigo":station["code"],"fecha":newest[0].isoformat(sep=" "),"variable":variable,"valor":value})
+            for variable,(when,value) in newest.items():
+                latest.append({"codigo":station["code"],"fecha":when.isoformat(sep=" "),"variable":variable,"valor":value})
     finally: conn.close()
     args.output.mkdir(exist_ok=True)
     with (args.output/"latest.csv").open("w",newline="",encoding="utf-8") as f:
-        w=csv.DictWriter(f,fieldnames=["codigo","fecha","variable","valor"]); w.writeheader(); w.writerows(latest)
+        w=csv.DictWriter(f,fieldnames=["codigo","fecha","variable","valor"],lineterminator="\n"); w.writeheader(); w.writerows(latest)
     updated=max((r["fecha"] for r in latest),default="")
     (args.output/"manifest.json").write_text(json.dumps({"schema_version":1,"updated_at":updated,"timezone":"America/Santiago","stations":manifest,"variables":PUBLIC_VARS},ensure_ascii=False,indent=2)+"\n")
     print(f"Exportación lista: {len(stations)} estaciones; última medición {updated}")
