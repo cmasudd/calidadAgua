@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "",
+  "updated_at": "2026-10-01 03:10:11",
   "timezone": "America/Santiago",
   "stations": [
     {
@@ -57,6 +57,9 @@
         ],
         "2026-09": [
           "data/AGUA-01/2026-09-part-001.csv"
+        ],
+        "2026-10": [
+          "data/AGUA-01/2026-10-part-001.csv"
         ]
       }
     },
@@ -117,6 +120,9 @@
         ],
         "2026-09": [
           "data/AGUA-02/2026-09-part-001.csv"
+        ],
+        "2026-10": [
+          "data/AGUA-02/2026-10-part-001.csv"
         ]
       }
     },
@@ -154,6 +160,9 @@
         ],
         "2026-09": [
           "data/AGUA-03/2026-09-part-001.csv"
+        ],
+        "2026-10": [
+          "data/AGUA-03/2026-10-part-001.csv"
         ]
       }
     },
@@ -291,6 +300,9 @@
         ],
         "2026-09": [
           "data/LVAG-03/2026-09-part-001.csv"
+        ],
+        "2026-10": [
+          "data/LVAG-03/2026-10-part-001.csv"
         ]
       }
     },
