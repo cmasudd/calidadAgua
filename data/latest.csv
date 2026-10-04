@@ -1,10 +1,10 @@
 codigo,fecha,variable,valor
 AGUA-01,2026-10-03 16:51:45,ph,13.97
-AGUA-01,2026-10-04 04:57:42,conductividad_us_cm,837.7
-AGUA-01,2026-10-04 04:57:42,temperatura_agua_c,16.31
-AGUA-01,2026-10-04 04:57:42,voltaje_v,12.31
-AGUA-01,2026-10-04 04:57:42,senal_csq,28
-AGUA-01,2026-10-04 04:57:42,temperatura_sistema_c,17
+AGUA-01,2026-10-04 06:03:43,conductividad_us_cm,832.6
+AGUA-01,2026-10-04 06:03:43,temperatura_agua_c,16.19
+AGUA-01,2026-10-04 06:03:43,voltaje_v,12.31
+AGUA-01,2026-10-04 06:03:43,senal_csq,28
+AGUA-01,2026-10-04 06:03:43,temperatura_sistema_c,16.25
 AGUA-02,2026-10-04 05:23:52,ph,9.11
 AGUA-02,2026-10-04 05:23:52,conductividad_us_cm,1086
 AGUA-02,2026-10-04 05:23:52,temperatura_agua_c,17
@@ -12,12 +12,12 @@ AGUA-02,2026-10-04 05:23:52,voltaje_v,12.09
 AGUA-02,2026-10-04 05:23:52,senal_csq,23
 AGUA-02,2026-10-04 05:23:52,temperatura_sistema_c,16.5
 AGUA-03,2026-10-03 20:53:34,ph,13.58
-AGUA-03,2026-10-04 02:44:37,conductividad_us_cm,939.4
-AGUA-03,2026-10-04 02:44:37,temperatura_agua_c,18.06
-AGUA-03,2026-10-04 02:44:37,voltaje_v,12.13
-AGUA-03,2026-10-04 02:44:37,senal_csq,17
-AGUA-03,2026-10-04 02:44:37,temperatura_sistema_c,14.5
-AGUA-03,2026-10-04 02:44:37,oxigeno_disuelto_mg_l,0
+AGUA-03,2026-10-04 05:40:34,conductividad_us_cm,961.8
+AGUA-03,2026-10-04 05:40:34,temperatura_agua_c,17.06
+AGUA-03,2026-10-04 05:40:34,voltaje_v,12.1
+AGUA-03,2026-10-04 05:40:34,senal_csq,16
+AGUA-03,2026-10-04 05:40:34,temperatura_sistema_c,14
+AGUA-03,2026-10-04 05:40:34,oxigeno_disuelto_mg_l,0
 LVAG-03,2026-10-04 03:02:43,distancia_agua_m,0
 LVAG-03,2026-10-04 03:02:43,profundidad_m,0.72
 LVAG-03,2026-10-04 03:02:43,voltaje_v,6.91
