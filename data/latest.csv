@@ -1,16 +1,16 @@
 codigo,fecha,variable,valor
 AGUA-01,2026-10-22 16:26:19,ph,13.95
-AGUA-01,2026-10-23 02:25:14,conductividad_us_cm,741.6
-AGUA-01,2026-10-23 02:25:14,temperatura_agua_c,19.25
-AGUA-01,2026-10-23 02:25:14,voltaje_v,12.33
-AGUA-01,2026-10-23 02:25:14,senal_csq,27
-AGUA-01,2026-10-23 02:25:14,temperatura_sistema_c,20.25
-AGUA-02,2026-10-23 02:35:56,ph,8.55
-AGUA-02,2026-10-23 02:35:56,conductividad_us_cm,1216
-AGUA-02,2026-10-23 02:35:56,temperatura_agua_c,16.81
-AGUA-02,2026-10-23 02:35:56,voltaje_v,12.02
-AGUA-02,2026-10-23 02:35:56,senal_csq,21
-AGUA-02,2026-10-23 02:35:56,temperatura_sistema_c,20.75
+AGUA-01,2026-10-23 03:31:14,conductividad_us_cm,740.1
+AGUA-01,2026-10-23 03:31:14,temperatura_agua_c,19.12
+AGUA-01,2026-10-23 03:31:14,voltaje_v,12.33
+AGUA-01,2026-10-23 03:31:14,senal_csq,28
+AGUA-01,2026-10-23 03:31:14,temperatura_sistema_c,20.25
+AGUA-02,2026-10-23 03:41:54,ph,8.53
+AGUA-02,2026-10-23 03:41:54,conductividad_us_cm,1215
+AGUA-02,2026-10-23 03:41:54,temperatura_agua_c,16.69
+AGUA-02,2026-10-23 03:41:54,voltaje_v,12.01
+AGUA-02,2026-10-23 03:41:54,senal_csq,21
+AGUA-02,2026-10-23 03:41:54,temperatura_sistema_c,20.5
 AGUA-03,2026-10-04 20:23:53,ph,13.78
 AGUA-03,2026-10-04 20:23:53,conductividad_us_cm,997.8
 AGUA-03,2026-10-04 20:23:53,temperatura_agua_c,17.69
