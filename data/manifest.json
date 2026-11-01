@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01 07:37:28",
+  "updated_at": "2026-11-01 09:11:51",
   "timezone": "America/Santiago",
   "stations": [
     {
@@ -431,6 +431,9 @@
         ],
         "2026-10": [
           "data/LVAG-05/2026-10-part-001.csv"
+        ],
+        "2026-11": [
+          "data/LVAG-05/2026-11-part-001.csv"
         ]
       }
     }
