@@ -1,10 +1,10 @@
 codigo,fecha,variable,valor
-AGUA-02,2026-11-14 09:11:33,ph,8.65
-AGUA-02,2026-11-14 09:11:33,conductividad_us_cm,1010
-AGUA-02,2026-11-14 09:11:33,temperatura_agua_c,20.62
-AGUA-02,2026-11-14 09:11:33,voltaje_v,12.13
-AGUA-02,2026-11-14 09:11:33,senal_csq,22
-AGUA-02,2026-11-14 09:11:33,temperatura_sistema_c,24.75
+AGUA-02,2026-11-14 10:17:49,ph,8.59
+AGUA-02,2026-11-14 10:17:49,conductividad_us_cm,1006
+AGUA-02,2026-11-14 10:17:49,temperatura_agua_c,20.5
+AGUA-02,2026-11-14 10:17:49,voltaje_v,12.1
+AGUA-02,2026-11-14 10:17:49,senal_csq,18
+AGUA-02,2026-11-14 10:17:49,temperatura_sistema_c,25.75
 LVAG-02,2026-11-14 01:58:49,distancia_agua_m,1.24
 LVAG-02,2026-11-14 01:58:49,profundidad_m,0.74
 LVAG-02,2026-11-14 01:58:49,voltaje_v,7.97
