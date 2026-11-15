@@ -12,10 +12,10 @@ LVAG-02,2026-11-14 13:58:37,senal_csq,18
 LVAG-02,2026-11-14 13:58:37,temperatura_aire_c,27.73
 LVAG-02,2026-11-14 13:58:37,humedad_aire_pct,64.94
 LVAG-02,2026-11-14 13:58:37,temperatura_sistema_c,33
-LVAG-05,2026-11-14 21:06:38,distancia_agua_m,0
-LVAG-05,2026-11-14 21:06:38,profundidad_m,1.23
-LVAG-05,2026-11-14 21:06:38,voltaje_v,8.35
-LVAG-05,2026-11-14 21:06:38,senal_csq,31
-LVAG-05,2026-11-14 21:06:38,temperatura_aire_c,18.64
-LVAG-05,2026-11-14 21:06:38,humedad_aire_pct,79.81
-LVAG-05,2026-11-14 21:06:38,temperatura_sistema_c,18.25
+LVAG-05,2026-11-15 09:06:21,distancia_agua_m,0
+LVAG-05,2026-11-15 09:06:21,profundidad_m,1.3
+LVAG-05,2026-11-15 09:06:21,voltaje_v,8.33
+LVAG-05,2026-11-15 09:06:21,senal_csq,31
+LVAG-05,2026-11-15 09:06:21,temperatura_aire_c,17.86
+LVAG-05,2026-11-15 09:06:21,humedad_aire_pct,78.85
+LVAG-05,2026-11-15 09:06:21,temperatura_sistema_c,18
