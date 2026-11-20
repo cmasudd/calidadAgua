@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20 09:05:27",
+  "updated_at": "2026-11-20 11:25:32",
   "timezone": "America/Santiago",
   "stations": [
     {
@@ -166,6 +166,9 @@
         ],
         "2026-10": [
           "data/AGUA-03/2026-10-part-001.csv"
+        ],
+        "2026-11": [
+          "data/AGUA-03/2026-11-part-001.csv"
         ]
       }
     },
