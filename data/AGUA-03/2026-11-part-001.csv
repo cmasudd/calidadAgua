@@ -1,3 +1,5 @@
 fecha,ph,conductividad_us_cm,temperatura_agua_c,oxigeno_disuelto_mg_l,distancia_agua_m,profundidad_m,temperatura_aire_c,humedad_aire_pct,temperatura_sistema_c,voltaje_v,senal_csq
 2026-11-20 11:24:14,7.74,4.6,26.94,0,,,,,26.25,12.08,13
 2026-11-20 11:25:32,7.49,3.71,27.06,0,,,,,27.25,12.07,13
+2026-11-20 11:27:47,7.81,4.15,26.81,0,,,,,26,12.03,12
+2026-11-20 11:29:08,8.54,2.82,27.25,0,,,,,28.25,12.04,14
