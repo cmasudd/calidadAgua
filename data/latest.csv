@@ -1,10 +1,10 @@
 codigo,fecha,variable,valor
-AGUA-02,2026-11-23 13:11:00,ph,4.16
-AGUA-02,2026-11-23 13:11:00,conductividad_us_cm,973.9
-AGUA-02,2026-11-23 13:11:00,temperatura_agua_c,20.75
-AGUA-02,2026-11-23 13:11:00,voltaje_v,12.11
-AGUA-02,2026-11-23 13:11:00,senal_csq,22
-AGUA-02,2026-11-23 13:11:00,temperatura_sistema_c,30
+AGUA-02,2026-11-23 14:17:57,ph,6.44
+AGUA-02,2026-11-23 14:17:57,conductividad_us_cm,986.3
+AGUA-02,2026-11-23 14:17:57,temperatura_agua_c,21.38
+AGUA-02,2026-11-23 14:17:57,voltaje_v,12.17
+AGUA-02,2026-11-23 14:17:57,senal_csq,19
+AGUA-02,2026-11-23 14:17:57,temperatura_sistema_c,31.75
 AGUA-03,2026-11-23 12:54:52,ph,0.94
 AGUA-03,2026-11-23 12:54:52,conductividad_us_cm,8197
 AGUA-03,2026-11-23 12:54:52,temperatura_agua_c,25.56
@@ -12,13 +12,13 @@ AGUA-03,2026-11-23 12:54:52,voltaje_v,12.26
 AGUA-03,2026-11-23 12:54:52,senal_csq,6
 AGUA-03,2026-11-23 12:54:52,temperatura_sistema_c,32.75
 AGUA-03,2026-11-23 12:54:52,oxigeno_disuelto_mg_l,8.36
-LVAG-02,2026-11-23 02:08:11,distancia_agua_m,1.26
-LVAG-02,2026-11-23 02:08:11,profundidad_m,0.69
-LVAG-02,2026-11-23 02:08:11,voltaje_v,7.96
-LVAG-02,2026-11-23 02:08:11,senal_csq,24
-LVAG-02,2026-11-23 02:08:11,temperatura_aire_c,16.68
-LVAG-02,2026-11-23 02:08:11,humedad_aire_pct,76.22
-LVAG-02,2026-11-23 02:08:11,temperatura_sistema_c,17
+LVAG-02,2026-11-23 14:08:16,distancia_agua_m,1.27
+LVAG-02,2026-11-23 14:08:16,profundidad_m,0.68
+LVAG-02,2026-11-23 14:08:16,voltaje_v,7.96
+LVAG-02,2026-11-23 14:08:16,senal_csq,25
+LVAG-02,2026-11-23 14:08:16,temperatura_aire_c,26.53
+LVAG-02,2026-11-23 14:08:16,humedad_aire_pct,55.22
+LVAG-02,2026-11-23 14:08:16,temperatura_sistema_c,30.75
 LVAG-05,2026-11-23 09:08:13,distancia_agua_m,0
 LVAG-05,2026-11-23 09:08:13,profundidad_m,0
 LVAG-05,2026-11-23 09:08:13,voltaje_v,7.57
